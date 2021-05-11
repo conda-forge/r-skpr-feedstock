@@ -15,7 +15,6 @@ source:
 build:
   merge_build_host: true  # [win]
   number: 0
-
   rpaths:
     - lib/R/lib/
     - lib/
@@ -31,56 +30,51 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
-
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-rcpp >=0.11.0
     - r-rcppeigen
-    - r-base64enc
     - r-car
-    - r-crayon
     - r-doparallel
     - r-dorng
     - r-foreach
     - r-future
+    - r-gt
     - r-iterators
-    - r-kableextra
-    - r-knitr
     - r-lazyeval
     - r-lme4
     - r-lmertest
     - r-magrittr
-    - r-nlme
+    - r-progress
     - r-promises
     - r-rintrojs
+    - r-scales
     - r-shiny
     - r-shinyjs
     - r-shinythemes
     - r-survival
     - r-viridis
-
   run:
     - r-base
     - {{ native }}gcc-libs         # [win]
     - r-rcpp >=0.11.0
     - r-rcppeigen
-    - r-base64enc
     - r-car
-    - r-crayon
     - r-doparallel
     - r-dorng
     - r-foreach
     - r-future
+    - r-gt
     - r-iterators
-    - r-kableextra
-    - r-knitr
     - r-lazyeval
     - r-lme4
     - r-lmertest
     - r-magrittr
-    - r-nlme
+    - r-progress
     - r-promises
     - r-rintrojs
+    - r-scales
     - r-shiny
     - r-shinyjs
     - r-shinythemes
@@ -94,11 +88,9 @@ test:
 
 about:
   home: https://github.com/tylermorganwall/skpr
-
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Generates and evaluates D, I, A, Alias, E, T, and G optimal designs. Supports generation and evaluation of blocked and split/split-split/.../N-split plot designs. Includes parametric and Monte Carlo power evaluation functions, and supports calculating power for censored responses. Provides a framework to evaluate
     power using functions provided in other packages or written by the user. Includes a Shiny graphical user interface that displays the underlying code used to create and evaluate the design to improve ease-of-use and make analyses more reproducible.
-
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
@@ -107,7 +99,6 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - comatrion/r-skpr
-
 
 # Package: skpr
 # Title: Design of Experiments Suite: Generate and Evaluate Optimal Designs
