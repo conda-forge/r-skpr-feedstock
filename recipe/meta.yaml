@@ -36,23 +36,19 @@ requirements:
     - r-rcpp >=0.11.0
     - r-rcppeigen
     - r-car
+    - r-dofuture
     - r-doparallel
     - r-dorng
     - r-foreach
     - r-future
-    - r-gt
     - r-iterators
     - r-lazyeval
     - r-lme4
     - r-lmertest
     - r-magrittr
     - r-progress
-    - r-promises
-    - r-rintrojs
+    - r-progressr
     - r-scales
-    - r-shiny
-    - r-shinyjs
-    - r-shinythemes
     - r-survival
     - r-viridis
   run:
@@ -61,23 +57,19 @@ requirements:
     - r-rcpp >=0.11.0
     - r-rcppeigen
     - r-car
+    - r-dofuture
     - r-doparallel
     - r-dorng
     - r-foreach
     - r-future
-    - r-gt
     - r-iterators
     - r-lazyeval
     - r-lme4
     - r-lmertest
     - r-magrittr
     - r-progress
-    - r-promises
-    - r-rintrojs
+    - r-progressr
     - r-scales
-    - r-shiny
-    - r-shinyjs
-    - r-shinythemes
     - r-survival
     - r-viridis
 
