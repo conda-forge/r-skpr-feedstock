@@ -1,4 +1,4 @@
-{% set version = "1.6.2" %}
+{% set version = "1.7.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/skpr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/skpr/skpr_{{ version }}.tar.gz
-  sha256: b3c2e3d5b7dd8790df1e4ff2a711a411dd9b962c686e76b66322b1d0d2a48341
+  sha256: 21bc8af8e6e5bcaa509e1a865c1723eefd9002f73bab79bd26e5aa3a0ebe29bc
 
 build:
   merge_build_host: true  # [win]
