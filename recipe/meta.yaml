@@ -36,19 +36,19 @@ requirements:
     - r-rcpp >=0.11.0
     - r-rcppeigen
     - r-car
+    - r-digest
     - r-dofuture
     - r-doparallel
     - r-dorng
     - r-foreach
     - r-future
+    - r-geometry
     - r-iterators
-    - r-lazyeval
     - r-lme4
     - r-lmertest
     - r-magrittr
     - r-progress
     - r-progressr
-    - r-scales
     - r-survival
     - r-viridis
   run:
@@ -56,19 +56,19 @@ requirements:
     - r-rcpp >=0.11.0
     - r-rcppeigen
     - r-car
+    - r-digest
     - r-dofuture
     - r-doparallel
     - r-dorng
     - r-foreach
     - r-future
+    - r-geometry
     - r-iterators
-    - r-lazyeval
     - r-lme4
     - r-lmertest
     - r-magrittr
     - r-progress
     - r-progressr
-    - r-scales
     - r-survival
     - r-viridis
 
