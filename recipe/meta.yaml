@@ -1,4 +1,4 @@
-{% set version = "1.8.2" %}
+{% set version = "1.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/skpr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/skpr/skpr_{{ version }}.tar.gz
-  sha256: 20f8b362bd6717c99b72bfd101cfc2716349524c1af7974dc5971e644882907d
+  sha256: 8387ced773a81064a69ab8eed8d366ce08eee60939616bf219f8d2ae6e0b8754
 
 build:
   number: 0
